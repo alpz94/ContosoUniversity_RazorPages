@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace ContosoUniversity_RazorPages.Models
 {
     /// <summary>
-    /// This represents a student enrolled on a course
+    /// This model represents a student enrolled on a course.
     /// Author: Ana Lucia Petinga Zorro
     /// </summary>
     public class Enrollment
@@ -20,9 +20,9 @@ namespace ContosoUniversity_RazorPages.Models
 
         public Grades? Grade { get; set; }
 
-        //Navigation / Relationship
+        // Relationship or Navigation Property
         public virtual Course Course { get; set; }
-
+        // Relationship or Navigation Property
         public virtual Student Student { get; set; }
 
     }
